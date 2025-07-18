@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-cold-rice-ad4kdjhe-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channelBinding=require
+    username: neondb_owner
+    password: npg_M0d9hHOfkqYm
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
