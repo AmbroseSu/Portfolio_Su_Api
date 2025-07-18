@@ -4,6 +4,7 @@ import com.ambrose.portfolio_su.entities.Testimonials;
 import com.ambrose.portfolio_su.repository.TestimonialRepository;
 import java.util.List;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/testimonials")
+@CrossOrigin(origins = "*") // Cho phép tất cả các nguồn gốc
 public class TestimonialController {
   private final TestimonialRepository testimonialRepository;
 
