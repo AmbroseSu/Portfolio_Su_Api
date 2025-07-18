@@ -25,4 +25,9 @@ public class TestimonialController {
   public Testimonials create(@RequestBody Testimonials testimonial) {
     return testimonialRepository.save(testimonial);
   }
+
+  @GetMapping("healthcheck")
+  public String healthCheck() {
+    return "OK";
+  }
 }
